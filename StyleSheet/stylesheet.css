@@ -1,0 +1,420 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+body
+{
+    user-select: none;
+    margin: auto;
+    font-family: 
+    Hiragino Sans,
+   "ヒラギノ角ゴシック",
+   Meiryo,
+   "メイリオ"
+}
+
+
+header
+{
+    position: fixed;
+    width:100%;
+    height:100px;
+    background-color: rgba(255, 255, 255,0.8);
+    z-index: 1;
+
+}
+
+.header-logo
+{
+    float: left;
+    margin-left:30px;
+    width:20%;
+    text-align: center;
+    line-height: 100px;
+    font-size:1.2vw;
+    color:black;
+    opacity: 1;
+}
+
+.menu-bar
+{
+    float:right;
+    width:70%;
+    opacity: 1;
+}
+
+.menu-bar-contents
+{
+    float: right;
+    text-align: center;
+    color: #707070;
+    padding:0 2%;
+    margin:0px 1%;
+    line-height: 100px;
+    font-size:1vw;
+}
+
+.accent
+{
+    background-color: #DB6060;
+    width:13%;
+    margin-right:0px;
+    color:white;
+    font-weight: bold;
+}
+
+.top-picture
+{
+    background-image: url("../Picture/no6.png");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 1080px;
+}
+
+.top-picture img
+{
+    position: relative;
+    width:50vw;
+    top:8%;
+    left: 10%;
+}
+
+.about,.benefit,.story,.qanda,.message,.flow,.entry
+{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.about h1,.benefit h1,.story h1,.qanda h1,.message h1,.flow h1,.entry h1
+{
+    margin-top:100px;
+    font-size: 100px;
+    font-family:
+    Hiragino Kaku Gothic ProN,
+    "ヒラギノ角ゴ ProN W3",
+    "ＭＳ Ｐゴシック",
+   
+}
+
+.about h2,.benefit h2,.story h2
+{
+    margin-top: 70px;
+    font-size: 50px;
+}
+
+.about p,.story p
+{
+    display: inline-block;
+    height: auto;
+    border-left: #D9D9D9 solid 19px;
+    line-height: 50px;
+    margin-top:50px;
+    padding-left: 30px;
+    font-size:28px;
+}
+
+.benefit-pic
+{
+    width:80%;
+    margin: 0 10%;
+    height:auto;
+    
+}
+
+.benefit-content
+{
+    width:1400px;
+    height:200px;
+    margin: 50px auto 0 auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.benefit .number
+{
+    float:left;
+    width:15%;
+    background-color: #DB6060;
+    color:white;
+    font-size:100px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.benefit .benefit-main
+{
+    height:200px;
+    background-color: #F7F7F7;
+}
+
+/* .benefit img
+{
+    float: left;
+    height:200px;
+    width: auto;
+    margin-left: 5%;
+} */
+
+.benefit .benefit-context
+{
+    float: left;
+    width:50%;
+    margin-left: 10%;
+}
+
+.benefit .sentence
+{
+    font-size:32px;
+    color:#DB6060;
+    line-height: 200px;
+}
+
+.benefit .main-sentence
+{
+    font-size:32px;
+    margin-top:70px;
+    color:#DB6060;
+}
+
+.benefit .sub-sentence
+{
+    font-size:20px;
+    margin-top: 20px;
+    color: #4B4B4B ;
+}
+
+.message-group
+{
+    display: table;
+    width: 60%;
+    height:auto;
+    margin-top: 70px;
+    padding:20px;
+    background-color: white;
+    box-shadow: 0.5vw 0.5vw 1vw rgba(0, 0, 0, 0.5);
+}
+
+.message-group .profile
+{
+    display: table-cell;
+    float: left;
+    width: 20%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+.message-group .message-main
+{
+    float: right;
+    width:70%;
+}
+
+.message-group .message-profile
+{
+    float: left;
+    padding-left: 1vw;
+    border-left: #DB6060 solid 1vw;
+}
+
+.message-group .name
+{
+    font-size: 2vw;
+}
+
+.message-group .degree
+{
+    font-size: 1.5vw;
+}
+
+.message-group .message-picture
+{
+    width:100%;
+    margin-top: 50px;
+
+}
+
+.flow-group
+{
+    margin-top: 50px;
+}
+
+.flow img
+{
+    float: left;
+    width:20%;
+    
+    height: auto;
+}
+
+.flow .main
+{
+    float: right;
+    width: 67%;
+    line-height: 3vw;
+    padding-left: 3%;
+    font-size:1.5vw;
+}
+
+.entry-group
+{
+    width:80%;
+    padding-top:50px;
+    padding-bottom: 180px;
+    margin-top:50px;
+    margin-left:10%;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.entry-group li
+{
+    height:80px;
+}
+
+.entry-group li p{
+    width:30%;
+    line-height: 80px;
+    font-size: 28px;
+    margin-left:10%;
+    float: left;
+}
+
+.entry-group li p span{
+    color:red;
+}
+
+.entry-group li input{
+    width: 40%;
+    line-height: 40px;
+    margin-top: 20px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.entry-group li .submit{
+    width:40%;
+    margin-top: 50px;
+    margin-left: 30%;
+    height: auto;
+    border: none;
+    border-radius: 0;
+}
+
+.entry-group li textarea{
+    width: 40%;
+    line-height: 40px;
+    margin-top: 20px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.question-group
+{
+    border-bottom: 1px solid #707070;
+}
+
+.question-group .question
+{
+    font-size: 32px;
+    line-height: 50px;
+    margin-top: 50px;
+}
+
+.question-group .answer
+{
+    font-size: 28px;
+    line-height: 45px;
+    margin-top: 30px;
+}
+
+/* .join-button
+{
+    width:30%;
+    height: 100px;
+    margin: 100px auto 100px auto;
+    background-color: #DB6060;
+    color:white;
+    line-height: 100px;
+    text-align: center;
+    font-size:24px;
+    
+} */
+
+.join-button{
+    width:30%;
+    margin-top: 50px;
+    margin-left: 35%;
+    margin-bottom: 50px;
+    height: auto;
+    border: none;
+    border-radius: 0;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+
+footer
+{
+    height:100px;
+    background-color: #EAEAEA;
+    color: #707070;
+    font-size: 24px;
+    line-height: 100px;
+    text-align: center;
+}
