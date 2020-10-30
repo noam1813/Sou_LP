@@ -10,6 +10,23 @@
     <meta name="thumbnail" content="Picture/mainLogo.png">
     <meta name="description" content="クリエイタープロデュース集団「※創」が手掛ける、クリエイター支援オーディション！絵を描くことが大好きで、絵を描き続けたいあなたのためのオーディションです。あなたはSNS上で、見る人をビックリさせる驚異的な画力を持っています。でもそれなのになんでが仕事もないし、生活もできないんだ…!!我々「創」はそんなモヤモヤを解決するために、本オーディションを開催します。">
     <link rel="icon" href="Picture/favicon.ico">
+
+    <script>
+        window.onscroll = function(){
+            var scrollTop = window.pageYOffset ;   //スクロール量を取得
+            if (scrollTop < 1080 ) { 　　
+                $('header').css('background-color', 'rgba(255,255,255,0)');
+                $('.non-accent').css('color', 'white');
+                $('.non-accent').css('transition', '0.5s')
+            }
+            else
+            {
+                $('header').css('background-color', 'rgba(255,255,255,0.8)');
+                $('.non-accent').css('color', 'black');
+            }
+        }
+    </script>
+
 </head>
 <body>
     <header>
