@@ -70,7 +70,6 @@ header
     position: fixed;
     width:100%;
     height:100px;
-    background-color: rgba(255, 255, 255,0.8);
     z-index: 1;
 
 }
@@ -78,13 +77,17 @@ header
 .header-logo
 {
     float: left;
-    margin-left:30px;
-    width:20%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform : translateY(-50%);
+    transform : translateY(-50%);
+    margin-left:3vw;
+    width:25%;
     text-align: center;
-    line-height: 100px;
     font-size:1.2vw;
-    color:black;
     opacity: 1;
+
+    
 }
 
 .menu-bar
@@ -98,33 +101,50 @@ header
 {
     float: right;
     text-align: center;
-    color: #707070;
     padding:0 2%;
     margin:0px 1%;
     line-height: 100px;
     font-size:1vw;
 }
 
+.non-accent
+{
+    color:white;
+}
+
 .accent
 {
     background-color: #DB6060;
+    color:white;
     width:13%;
     margin-right:0px;
-    color:white;
     font-weight: bold;
 }
 
 .top-picture
 {
-    background-image: url("../Picture/no6.png");
+    background-image: url("../Picture/no7.png");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
+    background-position-y: bottom;
     width: 100vw;
     height: 1080px;
 }
-
-.top-picture img
+.top-picture .join-button
 {
+    width:16%;
+    margin-left: 40%;    
+    height: auto;
+    position: absolute;
+    top:730px;
+    border: none;
+    border-radius: 0;
+}
+
+.catch-copy
+{
+    display: none;
     position: relative;
     width:50vw;
     top:8%;
@@ -133,8 +153,8 @@ header
 
 .about,.benefit,.story,.qanda,.message,.flow,.entry
 {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 6vw;
+    margin-right: 6vw;
 }
 
 .about h1,.benefit h1,.story h1,.qanda h1,.message h1,.flow h1,.entry h1
@@ -301,7 +321,7 @@ header
 
 .flow .main
 {
-    float: right;
+    float: left;
     width: 67%;
     line-height: 3vw;
     padding-left: 3%;
@@ -394,7 +414,7 @@ header
     
 } */
 
-.join-button{
+.qanda .join-button{
     width:30%;
     margin-top: 50px;
     margin-left: 35%;
