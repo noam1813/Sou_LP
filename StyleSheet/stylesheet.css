@@ -55,6 +55,7 @@ table {
 
 body
 {
+    box-sizing: border-box;
     user-select: none;
     margin: auto;
     font-family: 
@@ -64,8 +65,8 @@ body
    "メイリオ"
 }
 
-
-header
+@media screen and (min-width: 960px) {
+    header
 {
     position: fixed;
     width:100%;
@@ -78,16 +79,21 @@ header
 {
     float: left;
     position: absolute;
-    top: 50%;
-    -webkit-transform : translateY(-50%);
-    transform : translateY(-50%);
+    width: 20%;
+    height: auto;
+    margin-top:15px;
     margin-left:3vw;
-    width:25%;
     text-align: center;
     font-size:1.2vw;
     opacity: 1;
+    transition: 0.5s;
 
     
+}
+
+.hamburger
+{
+    display: none;
 }
 
 .menu-bar
@@ -95,6 +101,15 @@ header
     float:right;
     width:70%;
     opacity: 1;
+}
+
+.normal-screen
+{
+    display:block;
+}
+.hamburger-screen
+{
+    display: none;
 }
 
 .menu-bar-contents
@@ -123,21 +138,54 @@ header
 
 .top-picture
 {
-    background-image: url("../Picture/no7.png");
+    background-image: url("../Picture/no9.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: bottom;
     width: 100%;
-    height: 1080px;
+    height: 100vh;
 }
+
+.top-picture h1
+    {
+        position: absolute;
+        top:35vh;
+        width: 100%;
+        display: inline-block;
+        color:white;        
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 56px;
+        text-shadow: 2px 2px 1px black;
+        text-align: center;
+    }
+
+    .top-picture p
+    {
+        width: 100%;
+        position: absolute;
+        top:60vh;
+        display: inline-block;
+        color: white;
+        font-size: 28px;
+        line-height: 42px;
+        text-align: center;
+        
+    }
+
+    .top-picture h1 .under-line
+    {
+        background: linear-gradient(transparent 50%, #DB6060 0%);
+    }
+
 .top-picture .join-button
 {
     width:16%;
     margin-left: 42%;    
     height: auto;
     position: absolute;
-    top:730px;
+    top:60vh;
     border: none;
     border-radius: 0;
 }
@@ -218,13 +266,13 @@ header
     background-color: #F7F7F7;
 }
 
-/* .benefit img
+.benefit img
 {
     float: left;
     height:200px;
     width: auto;
     margin-left: 5%;
-} */
+}
 
 .benefit .benefit-context
 {
@@ -401,7 +449,7 @@ header
     margin-top: 30px;
 }
 
-/* .join-button
+.join-button
 {
     width:30%;
     height: 100px;
@@ -412,7 +460,7 @@ header
     text-align: center;
     font-size:24px;
     
-} */
+}
 
 .qanda .join-button{
     width:30%;
@@ -438,4 +486,387 @@ footer
     font-size: 24px;
     line-height: 100px;
     text-align: center;
+} 
+}
+
+
+
+@media screen and (max-width: 959px) {
+    body
+    {
+        user-select: none;
+        margin: auto;
+        font-family: 
+        Hiragino Sans,
+    "ヒラギノ角ゴシック",
+    Meiryo,
+    "メイリオ"
+    }
+    a
+    {
+        text-decoration: none;
+    }
+
+    .about,.benefit,.story,.qanda,.message,.flow,.entry
+{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.about h1,.benefit h1,.story h1,.qanda h1,.message h1,.flow h1,.entry h1
+{
+    margin-top:50px;
+    font-size: 50px;
+    font-family:
+    Hiragino Kaku Gothic ProN,
+    "ヒラギノ角ゴ ProN W3",
+    "ＭＳ Ｐゴシック",
+   
+}
+
+.about h2,.benefit h2,.story h2
+{
+    margin-top: 35px;
+    font-size: 20px;
+}
+
+.about p,.story p
+{
+    display: inline-block;
+    height: auto;
+    border-left: #D9D9D9 solid 9px;
+    line-height: 30px;
+    margin-top:50px;
+    padding-left: 10px;
+    font-size:16px;
+}
+
+    header
+    {
+        position: fixed;
+        width:100%;
+        height:62px;
+        background-color:rgba(255,255,255,0.8);
+        z-index: 1;
+    }
+
+    header .header-logo
+    {
+        float: left;
+        height: 50px;
+        width: auto;
+        margin: 5px 0;
+        margin-top: 6px;
+        margin-left: 3%;
+        position: relative;
+        top:50%;
+        -webkit-transform : translateY(-50%);
+        transform : translateY(-50%);
+        text-align:center;
+        line-height: 15px;
+        font-size:10px;
+        transition: 0.5s;
+    }
+
+    header .hamburger
+    {
+        display: block;
+        position: relative;
+        float: right;
+        width: 40px;
+        margin:5px 10px;
+
+    }
+
+    header .hamburger i
+    {
+        display: block;
+        width: 100%;
+        height: 2px;
+        margin:14px 0;
+        background-color: #333;
+        transition: 0.5s;
+    }
+    .normal-screen
+    {
+        display: none;
+    }
+
+    .hamburger-screen
+    {
+        position: absolute;
+        top:62px;
+        left: 100vh;
+        float: right;
+        width: 100%;
+        height: calc(100vh - 62px);
+        background: rgba(255,255,255,0.8);
+        flex-direction:column;
+        transition: .5s;
+    }
+
+    header ul li
+    {
+        display: block;
+        line-height: 10vh;        
+        text-align: right;
+        padding-right: 5%;
+        color:black;
+    }
+
+    .menu-1
+    {
+        background-color: #DB6060;
+        color:white;
+        font-weight: bold;
+    }
+
+    .menu-2
+    {
+        color:black;
+        font-weight: bold;
+    }
+
+    .is-active
+    {
+        left:0;
+    }
+
+    .top-picture
+    {
+        background-image: url("../Picture/no9.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: bottom;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .top-picture h1
+    {
+        position: absolute;
+        top:35vh;
+        display: inline-block;
+        color:white;        
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 36px;
+        text-shadow: 2px 2px 1px black;
+        text-align: center;
+    }
+
+    .top-picture p
+    {
+        width: 100%;
+        position: absolute;
+        top:60vh;
+        display: inline-block;
+        color: white;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        
+    }
+
+    .top-picture h1 .under-line
+    {
+        background: linear-gradient(transparent 50%, #DB6060 0%);
+    }
+
+    .benefit h2
+    {
+        margin-bottom:30px;
+    }
+
+    .benefit-pic
+    {
+        width:100%;
+        margin: 0 0;
+        height:auto;
+        
+    }
+
+    .message-group
+    {
+        display: table;
+        width: 90%;
+        height:auto;
+        margin-top: 20px;
+        padding:5%;
+        background-color: white;
+        box-shadow: 0.5vw 0.5vw 1vw rgba(0, 0, 0, 0.5);
+    }
+
+.message-group .profile
+{
+    display: table-cell;
+    float: left;
+    width: 20%;
+    margin:3% 0;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+.message-group .message-main
+{
+    float: right;
+    width:70%;
+}
+
+.message-group .message-profile
+{
+    float: left;
+    padding-left: 1vw;
+    border-left: #DB6060 solid 1vw;
+}
+
+.message-group .name
+{
+    font-size: 2vw;
+}
+
+.message-group .degree
+{
+    margin-top: 0.7vw;
+    font-size: 1.5vw;
+}
+
+.message-group .message-picture
+{
+    width:100%;
+    margin-top: 25px;
+
+}
+
+.flow-group
+{
+    margin-top: 0px;
+}
+
+.flow img
+{
+    width:90%;
+    margin-left: 5%;
+    height: auto;
+}
+
+.flow .main
+{
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 5%;
+    line-height: 28px;
+    padding-left: 3%;
+    font-size:16px;
+}
+
+.entry-group
+{
+    width:100%;
+    padding-top:30px;
+    padding-bottom: 30px;
+    margin-top:50px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.entry-group li
+{
+    height:80px;
+}
+
+.entry-group li p{
+    line-height: 20px;
+    font-size: 10px;
+    margin-left:5%;
+    text-align: left;
+}
+
+.entry-group li p span{
+    color:red;
+}
+
+.entry-group li input{
+
+    line-height: 30px;
+    margin-top: 10px;
+    width:90%;
+    margin-left: 5%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.entry-group li .submit{
+    width:60%;
+    margin-top: 50px;
+    margin-left: 20%;
+    height: auto;
+    border: none;
+    border-radius: 0;
+}
+
+.entry-group li textarea{
+    width: 90%;
+    margin-left: 5%;
+    line-height: 40px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.question-group
+{
+    border-bottom: 1px solid #707070;
+}
+
+.question-group .question
+{
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: 30px;
+}
+
+.question-group .answer
+{
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.top-picture .join-button
+{
+    width:60%;
+    margin-left: 20%;
+    margin-top:80vh;
+    background-color: #DB6060;
+    color:white;
+    line-height: 100px;
+    text-align: center;
+    font-size:24px;
+    
+}
+
+.qanda .join-button{
+    width:60%;
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-bottom: 50px;
+    height: auto;
+    border: none;
+    border-radius: 0;
+}
+
+
+footer
+{
+    height:50px;
+    background-color: #EAEAEA;
+    color: #707070;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+} 
+
 }
