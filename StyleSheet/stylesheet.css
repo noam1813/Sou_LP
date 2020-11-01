@@ -594,6 +594,7 @@ footer
 
     .hamburger-screen
     {
+        display: block;
         position: absolute;
         top:62px;
         left: 100vh;
@@ -645,6 +646,7 @@ footer
 
     .top-picture h1
     {
+        width: 100%;
         position: absolute;
         top:35vh;
         display: inline-block;
