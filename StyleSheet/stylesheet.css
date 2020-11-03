@@ -157,13 +157,14 @@ header
     {
         position: absolute;
         top:35vh;
-        width: 100%;
+        width: 90%;
+        margin-left: 5%;
         display: inline-block;
         color:white;        
-        font-size: 2rem;
+        font-size: 4vmin;
         font-weight: bold;
-        line-height: 4rem;
-        text-shadow: 2px 2px 1px black;
+        line-height: 8vmin;
+        text-shadow: 0.2vmin 0.2vmin 0.1vmin black;
         text-align: center;
     }
 
@@ -174,8 +175,8 @@ header
         top:60vh;
         display: inline-block;
         color: white;
-        font-size:1.4rem;
-        line-height: 2.4rem;
+        font-size:2.4vmin;
+        line-height: 4.8vmin;
         text-align: center;
         
     }
@@ -488,7 +489,7 @@ footer
     background-color: #EAEAEA;
     color: #707070;
     font-size: 2.4vmin;
-    line-height: 10vmin;
+    line-height: 100px;
     text-align: center;
 } 
 }
