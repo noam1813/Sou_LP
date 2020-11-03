@@ -188,9 +188,9 @@ header
 
 .top-picture .join-button
 {
-    margin-left: 35vw;
+    margin-left: 42.5vw;
     position: absolute;
-    top:60vh;
+    top:80vh;
 }
 
 .catch-copy
@@ -381,7 +381,7 @@ header
 {
     width:80%;
     padding-top:5vmin;
-    padding-bottom: 18vmin;
+    padding-bottom: 5vmin;
     margin-top:5vmin;
     margin-left:10%;
     border-radius: 3vmin;
@@ -390,7 +390,7 @@ header
 
 .entry-group li
 {
-    height:8vh;
+    
 }
 
 .entry-group li p{
@@ -415,9 +415,7 @@ header
 }
 
 .entry-group li .submit{
-    margin-top: 5vw;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 5vmin;
     height: auto;
 }
 
@@ -451,8 +449,10 @@ header
 .join-button
 {
     display: block;
-    width:30vw;
+    width:15vw;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #DB6060;
     color:white;
     text-align: center;
