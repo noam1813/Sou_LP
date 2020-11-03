@@ -825,16 +825,18 @@ footer
     border-bottom: 1px solid #707070;
 }
 
-.question-group .question {
-    font-size: 24px;
-    line-height: 50px;
-    margin-top: 40px;
+.question-group .question
+{
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: 30px;
 }
 
-.question-group .answer {
-    font-size: 19px;
-    line-height: 32px;
-    margin-top: 20px;
+.question-group .answer
+{
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 10px;
 }
 
 .top-picture .join-button
