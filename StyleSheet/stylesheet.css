@@ -157,13 +157,13 @@ header
     {
         position: absolute;
         top:35vh;
-        width: 90%;
-        margin-left: 5%;
+        width: 95%;
+        margin-left: 2.5%;
         display: inline-block;
         color:white;        
         font-size: 4vmin;
         font-weight: bold;
-        line-height: 8vmin;
+        line-height: 7vmin;
         text-shadow: 0.2vmin 0.2vmin 0.1vmin black;
         text-align: center;
     }
@@ -176,7 +176,7 @@ header
         display: inline-block;
         color: white;
         font-size:2.4vmin;
-        line-height: 4.8vmin;
+        line-height: 4.2vmin;
         text-align: center;
         
     }
@@ -397,7 +397,7 @@ header
 .entry-group li p{
     width:30%;
     line-height: 8vh;
-    font-size: 2.8vmin;
+    font-size: 2.4vmin;
     margin-left:10%;
     float: left;
 }
