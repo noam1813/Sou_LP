@@ -437,18 +437,16 @@ body
     border-bottom: 1px solid #707070;
 }
 
-.question-group .question
-{
-    font-size: 32px;
+.question-group .question {
+    font-size: 24px;
     line-height: 50px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
-.question-group .answer
-{
-    font-size: 28px;
-    line-height: 45px;
-    margin-top: 30px;
+.question-group .answer {
+    font-size: 19px;
+    line-height: 32px;
+    margin-top: 20px;
 }
 
 .join-button
@@ -487,7 +485,7 @@ footer
     height:100px;
     background-color: #EAEAEA;
     color: #707070;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 100px;
     text-align: center;
 } 
@@ -827,18 +825,16 @@ footer
     border-bottom: 1px solid #707070;
 }
 
-.question-group .question
-{
-    font-size: 20px;
-    line-height: 40px;
-    margin-top: 30px;
+.question-group .question {
+    font-size: 24px;
+    line-height: 50px;
+    margin-top: 40px;
 }
 
-.question-group .answer
-{
-    font-size: 16px;
-    line-height: 30px;
-    margin-top: 10px;
+.question-group .answer {
+    font-size: 19px;
+    line-height: 32px;
+    margin-top: 20px;
 }
 
 .top-picture .join-button
