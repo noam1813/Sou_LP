@@ -181,13 +181,10 @@ body
 
 .top-picture .join-button
 {
-    width:16%;
-    margin-left: 42%;    
-    height: auto;
+    margin-top:10%;
+    margin-left: 35%;
     position: absolute;
     top:60vh;
-    border: none;
-    border-radius: 0;
 }
 
 .catch-copy
@@ -457,13 +454,15 @@ body
 .join-button
 {
     width:30%;
-    height: 100px;
-    margin: 100px auto 100px auto;
+    height: auto;
+    margin: 10% 35% 100px auto;
     background-color: #DB6060;
     color:white;
     line-height: 100px;
     text-align: center;
     font-size:24px;
+    border: none;
+    border-radius: 0;
     
 }
 
