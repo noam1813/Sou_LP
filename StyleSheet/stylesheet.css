@@ -203,6 +203,12 @@ header
     left: 10%;
 }
 
+.topic
+{
+    border-left: #DB6060 solid 1vmin;
+    padding-left:1.5vmin;
+}
+
 .about,.benefit,.story,.qanda,.message,.flow,.entry
 {
     margin-left: 6vw;
@@ -230,7 +236,7 @@ header
 {
     display: block;
     height: auto;
-    border-left: #D9D9D9 solid 1.9vmin;
+    /* border-left: #D9D9D9 solid 1.9vmin; */
     line-height: 4vmin;
     margin-top:30px;
     padding-left: 30px;
@@ -518,7 +524,13 @@ footer
         text-decoration: none;
     }
 
-    .about,.benefit,.story,.qanda,.message,.flow,.entry
+.topic
+{
+    border-left: #DB6060 solid 9px;
+    padding-left: 15px;
+}
+
+.about,.benefit,.story,.qanda,.message,.flow,.entry
 {
     margin-left: 5%;
     margin-right: 5%;
@@ -537,7 +549,7 @@ footer
 
 .about h2,.benefit h2,.story h2
 {
-    margin-top: 35px;
+    margin-top: 15px;
     font-size: 20px;
 }
 
@@ -545,7 +557,7 @@ footer
 {
     display: inline-block;
     height: auto;
-    border-left: #D9D9D9 solid 9px;
+    /* border-left: #D9D9D9 solid 9px; */
     line-height: 30px;
     margin-top:30px;
     padding-left: 10px;
