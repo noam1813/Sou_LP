@@ -666,14 +666,14 @@ footer
         background-position: center;
         background-position-y: bottom;
         width: 100%;
-        height: 100vh;
+        height: 90vh;
     }
 
     .top-picture h1
     {
         width: 100%;
         position: absolute;
-        top:35vh;
+        top:25vh;
         display: inline-block;
         color:white;        
         font-size: 24px;
@@ -687,7 +687,7 @@ footer
     {
         width: 100%;
         position: absolute;
-        top:60vh;
+        top:50vh;
         display: inline-block;
         color: white;
         font-size: 16px;
@@ -794,8 +794,8 @@ footer
     padding-top:30px;
     padding-bottom: 30px;
     margin-top:50px;
-    border-radius: 30px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    /* border-radius: 30px; */
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .entry-group li
@@ -866,7 +866,7 @@ footer
 {
     width:60%;
     margin-left: 20%;
-    margin-top:80vh;
+    margin-top:70vh;
     background-color: #DB6060;
     color:white;
     line-height: 100px;
