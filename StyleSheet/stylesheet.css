@@ -397,7 +397,7 @@ header
     padding-bottom: 5vmin;
     margin-top:5vmin;
     margin-left:10%;
-    border-radius: 3vmin;
+    /* border-radius: 3vmin; */
     box-shadow: 1vmin 1vmin 2vmin rgba(0, 0, 0, 0.5);
 }
 
