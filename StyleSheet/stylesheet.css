@@ -444,7 +444,7 @@ header
 
 .entry-group li .field::placeholder
 {
-    top:0.5vh
+    top:0.5vh;
     font-size: 2vh;
 }
 
@@ -794,7 +794,6 @@ footer
     padding-top:30px;
     padding-bottom: 30px;
     margin-top:50px;
-    /* border-radius: 30px; */
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
